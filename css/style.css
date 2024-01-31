@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+--main-color:#2196f3;
+--second-color:#009688;
+}
+
+.game{
+    background-color: #eee;
+    min-height: 100vh;
+}
+
+.game-container{
+    margin: auto;
+    max-width: 900px;
+}
+.name{
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    font-size: 30px;   
+}
+
+.message{
+    background-color: white;
+    padding: 10px;
+    margin: 15px 0 ;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.message span{
+    font-weight: bold;
+    color: var(--second-color);    
+}
+
+.message span::before{
+    content: " [ ";
+}
+.message span::after{
+    content: " ] ";
+}
+
+.start{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: var(--second-color);
+    padding: 20px;
+    cursor: pointer;
+}
+
+.the-word{
+    text-align: center;
+    color: var(--main-color);
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.input{
+    width: 100%;
+    padding: 20px;
+    border: 3px solid var(--main-color);
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.upcoming-word{
+    text-align: center;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.upcoming-word .up-word{
+    color: white;
+    padding: 10px;
+    margin:5px;
+    background-color: var(--main-color);
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center ;
+    text-transform: capitalize;
+}
+
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+}
+
+.control span{
+color: var(--second-color);
+}
+
+.error-lvl {
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    display: none;
+}
+
+.finish{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+.container-of-control{
+    text-align: center;
+    
+}
+
+.finish .good{
+    color: var(--main-color);
+}
+
+.finish .bad{
+    color: red;
+}
